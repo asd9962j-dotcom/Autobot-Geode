@@ -79,7 +79,7 @@ namespace Bot {
 class $modify(BotGJBaseGameLayer, GJBaseGameLayer) {
     void handleButton(bool down, int button, bool isPlayer1) {
         if (Bot::mode == BotMode::Recording && !Bot::injecting && PlayLayer::get()) {
-            Bot::clicks.push_back({m_gameState.m_currentProgress, down, button, isPlayer1});
+            Bot::clicks.push_back({static_cast<int>(m_gameState.m_currentProgress), down, button, isPlayer1});
         }
         GJBaseGameLayer::handleButton(down, button, isPlayer1);
     }
@@ -94,7 +94,7 @@ class $modify(BotGJBaseGameLayer, GJBaseGameLayer) {
             }
             Bot::injecting = false;
         }
-        GJBaseGameLayer::processCommands(dt);
+        GJBaseGameLayer::processCommands(dt, false, false);
     }
 };
 
