@@ -1,5 +1,5 @@
 {
-  "geode": "5.9.0",
+    "geode": "=>5.10.1",
   "gd": {
     "win": "*",
     "android": "*",
@@ -8,7 +8,7 @@
   },
   "id": "personal.autobot",
   "name": "AutoBot",
-  "version": "v1.0.1",
+    "version": "1.0.0",
   "developer": "Personal",
   "description": "Bot de macros: graba tus clicks frame a frame y los repite para pasar el nivel solo.",
   "tags": ["gameplay", "utility"],
