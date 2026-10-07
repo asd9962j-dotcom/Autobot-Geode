@@ -1,0 +1,23 @@
+{
+  "geode": "v5.9.0",
+  "gd": {
+    "win": "*",
+    "android": "*",
+    "mac": "*",
+    "ios": "*"
+  },
+  "id": "personal.autobot",
+  "name": "AutoBot",
+  "version": "v1.0.1",
+  "developer": "Personal",
+  "description": "Bot de macros: graba tus clicks frame a frame y los repite para pasar el nivel solo.",
+  "tags": ["gameplay", "utility"],
+  "settings": {
+    "auto-replay": {
+      "type": "bool",
+      "name": "Reproducir macro automáticamente",
+      "description": "Al entrar a un nivel que tenga macro guardada, la reproduce sola.",
+      "default": false
+    }
+  }
+}
